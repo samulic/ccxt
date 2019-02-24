@@ -8,7 +8,7 @@ RUN sed -i 's/archive\.ubuntu\.com/us\.archive\.ubuntu\.com/' /etc/apt/sources.l
 RUN apt-get update
 
 # Miscellaneous deps
-RUN apt-get -y install curl gnupg git pandoc
+RUN apt-get -y install curl gnupg git pandoc apt-utils build-essential libssl-dev libffi-dev
 
 # PHP
 RUN apt-get install -y php php-curl php-iconv php-mbstring php-bcmath
